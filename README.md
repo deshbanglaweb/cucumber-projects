@@ -1,26 +1,17 @@
-# Cucumber-Java Skeleton
+# Cucumber-Project
 
-[![Build Status](https://travis-ci.org/cucumber/cucumber-java-skeleton.svg?branch=main)](https://travis-ci.org/cucumber/cucumber-java-skeleton)
+This is the bdd practice project.
+In this project I build a simple calculator application with just addition and multiplication operation ,
+given that there are only two double input from user.
 
-This is the simplest possible build script setup for Cucumber using Java.
-There is nothing fancy like a webapp or browser testing. All this does is to show you how
-to install and run Cucumber!
 
-There is a single feature file with one scenario. The scenario has three steps, two of them pending. See if you can make them all pass!
 
 ## Get the code
 
 Git:
 
-    git clone https://github.com/cucumber/cucumber-java-skeleton.git
-    cd cucumber-java-skeleton
-
-Subversion:
-
-    svn checkout https://github.com/cucumber/cucumber-java-skeleton/trunk cucumber-java-skeleton
-    cd cucumber-java-skeleton
-
-Or simply [download a zip](https://github.com/cucumber/cucumber-java-skeleton/archive/main.zip) file.
+    git clone https://github.com/deshbanglaweb/cucumber-projects
+    cd cucumber-projects
 
 ## Use Maven
 
@@ -29,15 +20,6 @@ Open a command window and run:
     ./mvnw test
 
 This runs Cucumber features using Cucumber's JUnit runner. The `@RunWith(Cucumber.class)` annotation on the 
-`RunCucumberTest` class tells JUnit to kick off Cucumber.
-
-## Use Gradle
-
-Open a command window and run:
-
-     ./gradlew test --rerun-tasks --info
-
-This runs Cucumber features using Cucumber's JUnit runner. The `@RunWith(Cucumber.class)` annotation on the
 `RunCucumberTest` class tells JUnit to kick off Cucumber.
 
 ## Overriding options
@@ -52,10 +34,6 @@ Using Maven:
 
     mvn -Dcucumber.features="..." -Dcucumber.glue="..." test
 
-Using Gradle:
-
-    gradlew -Dcucumber.features="..." -Dcucumber.glue="..." test
-
 For available options and overriding rules, please consult the following Maven command:
 
     mvn exec:java \
@@ -67,16 +45,16 @@ For available options and overriding rules, please consult the following Maven c
 
 Specify a particular scenario by *line*
 
-    -Dcucumber.features="classpath:skeleton/belly.feature:4"
+    -Dcucumber.features="classpath:skeleton/Caculation.feature:4"
 
 This works because Maven puts `./src/test/resources` on your `classpath`.
 You can also specify files to run by filesystem path:
 
-    -Dcucumber.features="src/test/resources/skeleton/belly.feature:4"
+    -Dcucumber.features="src/test/resources/skeleton/Calculation.feature:4"
 
 In case you have many feature files or scenarios to run against, separate them with commas `,`
 
-    -Dcucumber.features="src/test/resources/skeleton/belly.feature:4, src/test/resources/skeleton/stomach.feature"
+    -Dcucumber.features="src/test/resources/skeleton/Calculation.feature:4, src/test/resources/skeleton/xyz.feature"
 
 You can also specify what to run by *tag*:
 
