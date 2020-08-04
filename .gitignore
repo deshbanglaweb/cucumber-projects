@@ -1,0 +1,13 @@
+/.idea/
+*.iml
+/target/
+/out/
+/lib
+/build/
+/.gradle/
+/.mvn/
+/bin
+.classpath
+.project
+.settings
+*.versionsBackup
