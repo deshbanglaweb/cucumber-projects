@@ -35,13 +35,13 @@ public class StepDefinitions {
          System.out.println(result);
     }
 
-    @Then("assert calculation")
-    public void assert_calculation() {
+    @Then("assert calculation {double}")
+    public void assert_calculation(double expectedOutput) {
         if(sign.equals("+")){
-            assertEquals(result,22.0);
+            assertEquals(expectedOutput, result);
         }
         else if(sign.equals("*")){
-            assertEquals(result,120.0);
+            assertEquals(expectedOutput,result);
         }
         System.out.println(result);
     }
